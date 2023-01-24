@@ -49,7 +49,7 @@ final class QueuePagerPersister implements PagerPersisterInterface
             'populate_queue' => Commands::POPULATE,
             'populate_reply_queue' => null,
             'reply_receive_timeout' => 5000, // ms
-            'limit_overall_reply_time' => 180, // sec
+            'limit_overall_reply_time' => 5000, // sec
         ], $options);
 
         $pager->setCurrentPage($options['first_page']);
